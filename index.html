@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Proxy Portal</title>
+    <title>Portal</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; }
+        iframe { width: 90%; height: 70vh; border: 2px solid #333; background: #fff; }
+        button { padding: 15px; margin: 5px; cursor: pointer; background: #222; color: #fff; border: 1px solid #444; }
+    </style>
 </head>
-<body style="background:#000; color:#fff; text-align:center;">
+<body>
     <h1>Portal Active</h1>
-    <iframe id="frame" src="https://games-3kh0.github.io/3kh0-assets/slope/" style="width:90%; height:70vh; border:none; background:#fff;"></iframe>
+    
+    <iframe id="frame" src="https://games-3kh0.github.io/3kh0-assets/slope/"></iframe>
     <br>
     <button onclick="document.getElementById('frame').src='https://games-3kh0.github.io/3kh0-assets/2048/'">2048</button>
     <button onclick="document.getElementById('frame').src='https://games-3kh0.github.io/3kh0-assets/slope/'">Slope</button>
+    
+    <hr>
+    
+    <button onclick="window.open('https://lite.duckduckgo.com/lite/', '_blank')">🔍 Open Search</button>
+    <button onclick="window.open('https://www.youtube.com/', '_blank')">🎵 Open YouTube</button>
+    <button onclick="window.open('https://open.spotify.com/', '_blank')">🎵 Open Spotify</button>
 </body>
 </html>
